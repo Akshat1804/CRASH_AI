@@ -1,0 +1,294 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html , body{
+    height: 100%;
+    width: 100%;
+    font-family:  EB Garamond;
+}
+
+.main{
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+.main video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    color: #ffffff;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 100;
+    transition:  0.34s ease-in-out;
+    position: fixed;
+}
+
+/* .nav:hover {
+    background-color: #000000;
+}
+
+.nav:hover h1,
+.nav:hover .nav-part2 h4,
+.nav:hover .nav-part2 button {
+    color: #9d0073;
+}
+
+.nav:hover .nav-part2 button {
+    background-color: #9d0073;
+    color: #ffffff;
+} */
+
+
+.nav h1 {
+    font-size: 29px;
+    font-weight: bold;
+}
+
+.nav-part2 {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.nav-part2 h4 {
+    cursor: pointer;
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: 500;
+    text-decoration: none;
+    
+}
+
+.nav-part2 button {
+    padding: 8px 16px;
+    background-color: rgb(219, 219, 219);
+    color: #9d0073;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.nav-part2 i {
+    font-size: 24px;
+    cursor: pointer;
+    display: none;
+}
+
+.tools{
+    margin-top: 100px;
+}
+
+
+
+.main > video {
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    object-fit: cover;
+    position: relative;
+}
+
+.news-item {
+    cursor: pointer;
+    overflow: hidden;
+}
+
+.news-item img {
+    transition: transform 1s ease-in-out;
+}
+
+.news-item img:hover {
+    transform: scale(1.05);
+}
+
+.news-item p {
+    transition: color 0.3s ease-in-out;
+}
+
+.news-item:hover p {
+    color: #383838;
+}
+
+
+
+.research-item {
+    cursor: pointer;
+    overflow: hidden;
+    transition: all 0.3s ease-in-out;
+}
+
+.research-item img {
+    transition: transform 0.8s ease-in-out;
+}
+
+.research-item:hover img {
+    transform: scale(1.05);
+}
+
+.research-item p {
+    transition: color 0.4s ease-in-out;
+}
+
+.research-item:hover p {
+    color: #808080;
+}
+
+.studio-item {
+    cursor: pointer;
+    overflow: hidden;
+}
+
+.studio-item img {
+    transition: transform 0.8s ease-in-out;
+}
+
+.studio-item:hover img {
+    transform: scale(1.05);
+}
+
+.studio-item h2, .studio-item p {
+    transition: color 0.4s ease-in-out;
+}
+
+.studio-item:hover h2, .studio-item:hover p {
+    color: #808080;
+}
+
+.customers .flex-col {
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+.customers .flex-col:hover {
+    transform: scale(1.00001);
+}
+
+.customers .flex-col img {
+    transition: transform 1s ease-in-out;
+}
+
+.customers .flex-col:hover img {
+    transform: scale(1.05);
+}
+
+.customers .flex-col h6,
+.customers .flex-col h2 {
+    transition: color 0.3s ease-in-out;
+}
+
+.customers .flex-col:hover h6,
+.customers .flex-col:hover h2 {
+    color: #808080;
+}
+
+
+
+
+
+
+@media  (min-width: 320px) and (max-width: 768px) {
+    .nav-part2 h4, .nav-part2 button {
+        display: none;
+    }
+    .nav-part2 i {
+        display: block;
+    }
+
+    .main{
+        height: 60%;
+    }
+
+    .main > video{
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+    }
+
+    .con h2{
+        font-size: 20px;
+        margin-right: 10px;
+    }
+    .con p{
+        font-size: 8px;
+        margin-right: 10px;
+
+
+    }
+    .con a {
+        display: flex;
+        font-size: 8px;
+        margin-right: 10px;
+    }
+
+    .con demo {
+        display: none;
+    }
+
+    .tools{
+        margin-top: 0;
+    }
+
+    .tools-content h2{
+        font-size: 20px;
+    }
+    .tools-content p{
+        font-size: 12px;
+    }
+    .tools-content button{
+        font-size: 12px;
+    }
+
+    .news-item img{
+        width: 100%;
+        height: 70%;
+        object-fit: cover;
+    }
+
+    .research-item img{
+        width: 100%;
+        height: 70%;
+        object-fit: cover;
+    }
+
+    .research-item p{
+        font-size: 12px;
+    }
+ 
+    .studios-section{
+        margin-top: 10;
+    }
+
+    .studios-section h2{
+        font-size: 20px;
+    }
+
+    .studios-section p{
+        font-size: 12px;
+    }
+
+    
+
+
+
+
+
+}
